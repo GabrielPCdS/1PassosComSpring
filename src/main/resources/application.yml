@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: Produtos API # Nome da aplicação: Identifica o seu microserviço/projeto
+  datasource:
+    url: jdbc:h2:mem:produtos # URL do Banco de Dados: Cria um banco H2 em memória chamado "produtos"
+    username: ga # Usuário para conectar ao banco
+    password: password
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect # Dialeto JPA: Diz ao Hibernate para falar a "língua" do H2
+  h2:
+    console:
+      enabled: true # Habilita o console web do H2 para você visualizar as tabelas no navegador
+      path: /h2-console # O caminho/endereço para acessar o console (ex: localhost:8080/h2-console)

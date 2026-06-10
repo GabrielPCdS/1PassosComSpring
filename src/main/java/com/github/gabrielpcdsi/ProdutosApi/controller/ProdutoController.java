@@ -8,7 +8,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/produtos")
-public class PrudutoController {
+
+public class ProdutoController {
 
     @PostMapping
     public void salvar(@RequestBody Produto produto){
